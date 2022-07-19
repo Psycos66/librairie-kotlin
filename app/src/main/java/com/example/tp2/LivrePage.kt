@@ -19,7 +19,7 @@ class LivrePage : AppCompatActivity() {
         setContentView(R.layout.livre_page)
 
 
-        actionBar?.setDisplayHomeAsUpEnabled(true);
+        actionBar?.setDisplayHomeAsUpEnabled(true)
 
         val isRead = findViewById<CheckBox>(R.id.is_read)
         val title = findViewById<TextView>(R.id.title)

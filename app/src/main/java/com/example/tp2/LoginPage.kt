@@ -30,13 +30,13 @@ class LoginPage : AppCompatActivity() {
             }
             if (email.isBlank() && password.isBlank()) {
                 isBothBlank = true
-                CustomAlert("L'email et le mot de passe ne sont pas renseigné")
+                customAlert("L'email et le mot de passe ne sont pas renseigné")
             }
             if (!isBothBlank && email.isBlank()) {
-                CustomAlert("L'email n'est pas renseigné")
+                customAlert("L'email n'est pas renseigné")
             }
             if (!isBothBlank && password.isBlank()) {
-                CustomAlert("Le mot de passe n'est pas renseigné")
+                customAlert("Le mot de passe n'est pas renseigné")
             }
         }
     }
@@ -53,7 +53,7 @@ class LoginPage : AppCompatActivity() {
         }
     }
 
-    private fun CustomAlert(message: String) {
+    private fun customAlert(message: String) {
         AlertDialog.Builder(this).create().run {
             setMessage(message)
             setButton(AlertDialog.BUTTON_POSITIVE, "Ok") { _, _ -> }
