@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <CheckBox
+        android:id="@+id/is_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/is_read"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:checked="false"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/books"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageBooks"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date_de_parution"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/r_sume"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/resume_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/content"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:padding="5dp"/>
+
+</LinearLayout>

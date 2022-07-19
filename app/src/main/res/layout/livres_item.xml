@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_border_red"
+        android:clickable="true">
+
+        <!--Image view for displaying image-->
+        <ImageView
+            android:id="@+id/imageBooks"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:padding="3dp" />
+
+        <!--Text view for displaying text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/imageBooks">
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:text="@string/nom_livre"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/bookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:padding="3dp"
+                android:text="@string/author_livre"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

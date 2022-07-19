@@ -1,0 +1,3 @@
+com.google.firebase.firestore.ktx.BuildConfig
+com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar
+com.google.firebase.firestore.ktx.FirestoreKt

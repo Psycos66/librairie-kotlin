@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TP2</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="se_connecter">SE CONNECTER</string>
+    <string name="books">Books</string>
+    <string name="users">Users :</string>
+    <string name="fire_store_data">Fire Store data</string>
+    <string name="nom_livre">Nom livre</string>
+    <string name="author_livre">author</string>
+    <string name="is_read">Avez-vous lu ce livre ?</string>
+    <string name="date_de_parution">Date de parution :</string>
+    <string name="r_sume">Résume :</string>
+    <string name="content">content</string>
+</resources>
