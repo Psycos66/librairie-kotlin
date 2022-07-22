@@ -2,6 +2,7 @@ package com.example.tp2
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.util.Log
 import android.widget.CheckBox
 import android.widget.ImageView
@@ -11,6 +12,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.squareup.picasso.Picasso
 
+
 class LivrePage : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
@@ -18,8 +20,7 @@ class LivrePage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.livre_page)
 
-
-        actionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val isRead = findViewById<CheckBox>(R.id.is_read)
         val title = findViewById<TextView>(R.id.title)
@@ -32,7 +33,7 @@ class LivrePage : AppCompatActivity() {
         db.collection("book")
             .document(intent.getStringExtra("id").toString())
             .get().addOnCompleteListener { result ->
-                val livre = result.getResult()
+                val livre = result.result
                 if (livre.get("isRead") as Boolean) {
                     isRead.isChecked = true
                 }
@@ -49,6 +50,11 @@ class LivrePage : AppCompatActivity() {
             db.collection("book").document(intent.getStringExtra("id").toString())
                 .update("isRead",b)
         }
+        resume.movementMethod = ScrollingMovementMethod()
+    }
 
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

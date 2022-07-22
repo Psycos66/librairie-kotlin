@@ -14,7 +14,7 @@ interface MyAdapterInterface {
     fun onClickItem(id :String)
 }
 
-class MyAdapter(private val livreList: ArrayList<Livre>, val myAdapterInterface :MyAdapterInterface) :
+class MyAdapter(private val livreList: ArrayList<Livre>, private val myAdapterInterface :MyAdapterInterface) :
     RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
