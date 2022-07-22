@@ -12,4 +12,8 @@
     <string name="date_de_parution">Date de parution :</string>
     <string name="r_sume">Résume :</string>
     <string name="content">content</string>
+    <string name="retour">Retour</string>
+    <string name="deconnect">deconnecté</string>
+    <string name="buttondeconnecter">buttonDeconnecter</string>
+    <string name="d_connecter">Déconnecter</string>
 </resources>
